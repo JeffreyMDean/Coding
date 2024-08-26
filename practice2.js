@@ -69,3 +69,21 @@ while (index1 < numbers.length) {
   index1++;
 }
 console.log(largestProduct);
+
+// Implement a function named factorial that has one parameter: an integer, n. It must return the value of n! (i.e.,  factorial).
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(4));
+
+// factorial(4) calls factorial(3)
+// factorial(3) calls factorial(2)
+// factorial(2) calls factorial(1)
+// factorial(1) meets the base case condition and returns 1
+
+// factorial(2) can return its value: 2 * factorial(1) = 2 * 1 = 2
+// factorial(3) can return its value: 3 * factorial(2) = 3 * 2 = 6
+// factorial(4) can return its value: 4 * factorial(3) = 4 * 6 = 24
