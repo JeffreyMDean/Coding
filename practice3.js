@@ -40,3 +40,4 @@ console.log(factorial(4));
 // factorial(2) returns its value of 2, 2 * factorial(1) = 2 * 1 = 2
 // factorial(3) returns its value of 3, 3 * factorial(2) = 3 * 2 = 6
 // factorial(4) returns its value of 4, 4 * factorial(3) = 4 * 6 = 24
+
