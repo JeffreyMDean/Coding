@@ -5,8 +5,8 @@
 
 // You can return the answer in any order.
 
-// var nums = [2,7,11,15];
-// var target = 9;
+// var nums = [2,7,11,15];      2, 0
+// var target = 9;              0, 1
 
 var twoSum = function(nums, target) {
   const numMap = new Map();
@@ -15,14 +15,13 @@ var twoSum = function(nums, target) {
     const complement = target - nums[i];
 
     if (numMap.has(complement)) {
-      return [numMap.get(complement), i];
+      return [numMap.get(complement), i];     // retreiving data
     }
 
-    numMap.set(nums[i], i);
+    numMap.set(nums[i], i); // inserting data
   }
 
   return [];
 };
 
 console.log(twoSum([2,7,11,15], 9));
-
