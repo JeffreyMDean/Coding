@@ -46,3 +46,19 @@ while (index1 < numberPairs.length) {
   index1++;
 }
 console.log(flattenedArray);
+
+// Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+// For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+var strings1 = ["a", "b", "c"];
+var strings2 = ["d", "e", "f", "g"];
+var combinedStrings = [];
+var index1 = 0;
+while (index1 < strings1.length) {
+  var index2 = 0;
+  while (index2 < strings2.length) {
+    combinedStrings.push(strings1[index1] + strings2[index2]);
+    index2++;
+  }
+  index1++;
+}
+console.log(combinedStrings);
