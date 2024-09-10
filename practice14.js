@@ -1,24 +1,38 @@
 // Start with an array of strings and combine them all into a single string.
 // For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
 
-var strings = ["volleyball", "basketball", "badminton"];
-var singleString = "";
-var index = 0;
-while (index < strings.length) {
-  singleString = singleString + strings[index];
-  index++;
+function test(input) {
+
+  let result = [];
+  let index = 0;
+  while (index < input.length) {
+    result.push(input[index]);
+    index++;
+  }
+  return result;
 }
-console.log(singleString);
 
-var strings = ["volleyball", "basketball", "badminton"];
-var singleString = "";
-strings.forEach(function (string) {
-  singleString = singleString + string;
-});
-console.log(singleString);
+const input = ["volleyball", "basketball", "badminton"];
+console.log(test(input));
+    //everything after SELECT is column name   //everyhting after FROM is model name (plural)
+SELECT * FROM exercises 
+WHILE name = 
 
-var strings = ["volleyball", "basketball", "badminton"];
-var singleString = strings.reduce(function (single, string) {
-  return single + string;
-}, "");
-console.log(singleString);
+
+function test2(input) {
+  let emptyString = "";
+  emptyString.forEach(function (string) {
+  emptyString = emptyString + string;
+  });
+  return emptyString;
+}
+console.log(test2(input));
+
+
+
+// var strings = ["volleyball", "basketball", "badminton"];
+// var singleString = strings.reduce(function (single, string) {
+//   return single + string;
+// }, "");
+// console.log(singleString);
+
