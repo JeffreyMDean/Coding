@@ -28,7 +28,7 @@ function largestSum(nums) {
     let index2 = 0;
     while (index2 < nums.length) {
       if (index1 !== index2) {
-        sum = nums[index1] + nums[index2];
+        let sum = nums[index1] + nums[index2];
         if (sum > maxSum) {
           maxSum = sum;
         }
