@@ -15,3 +15,5 @@ function timesTen(number) {
 
 const number = 2;
 console.log(timesTen(number));
+
+// Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
