@@ -6,7 +6,7 @@
 // If the book is a special collection book, the fine is $5 per day, regardless of the number of days overdue.
 
 function fineCalculator() {
-  let bookType = prompt("Enter the type of book (regular, reference, or special collection").toLowerCase();
+  let bookType = prompt("Enter the type of book (regular, reference, or special collection");
   let daysOverdue = parseInt(prompt("Enter the number of days overdue"), 10);
   let fineAmount = 0;
 
@@ -14,20 +14,20 @@ function fineCalculator() {
     if (daysOverdue <= 7) {
       fineAmount = daysOverdue * 1;
     } else {
-      fineAmount = (7 * 1) + ((daysOverdue - 7) * 2);
+      fineAmount = (7 * 1) + ((daysOverdue - 7) * 2)
     }
   } else if (bookType === "reference") {
     fineAmount = 0;
   } else if (bookType === "special collection") {
     fineAmount = daysOverdue * 5;
   } else {
-    console.log("Invalid type of book");
-    return; // function will terminate and not reach the fine calculation or the final return statement. Function will return undefined.
+    console.log("Invalid entry for type of book");
+    return;
   }
-  return fineAmount; // calculated fine for valid inputs
+  return fineAmount;
 }
 
-const fineAmount = fineCalculator();
+fineAmount = fineCalculator();
 if (fineAmount !== undefined) {
-  console.log(`Your fine amount is $${fineAmount}.00`);
+  console.log(`Your fine amount is $${fineAmount}.00.`);
 }
