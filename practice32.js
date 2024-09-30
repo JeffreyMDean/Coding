@@ -27,7 +27,8 @@ function fineCalculator() {
   return fineAmount;
 }
 
-fineAmount = fineCalculator();
+const fineAmount = fineCalculator();
 if (fineAmount !== undefined) {
   console.log(`Your fine amount is $${fineAmount}.00.`);
 }
+
