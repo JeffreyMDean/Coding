@@ -23,16 +23,47 @@ function numberPrinter1() {
 numberPrinter1();
 
 // Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
-
 function test() {
   let input;
   do {
-    input = window.prompt("Enter a number:");
+    input = window.prompt("enter a number:");
     input = parseInt(input);
   } while (input <= 10);
-
-  console.log("Your entered a number greater than 10:", input);
+  console.log("You entered a number greater than 10:", input);
   return input;
 }
 
 test();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
