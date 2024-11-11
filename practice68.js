@@ -61,3 +61,5 @@ function addUpToTen(array) {
 
 const inputArray4 = [2, 5, 3, 1, 0, 7, 11];
 console.log(addUpToTen(inputArray4));
+
+
