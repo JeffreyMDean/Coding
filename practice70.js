@@ -29,7 +29,7 @@ function onlyW2(array) {
 }
 
 const inputArray2 = ["winner", "winner", "chicken", "dinner"];
-console.log(onlyW2(inputArray2))
+console.log(onlyW2(inputArray2));
 
 function onlyW3(array) {
   let newArray = array.filter(function (string) {
