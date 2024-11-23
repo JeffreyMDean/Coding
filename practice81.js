@@ -50,8 +50,8 @@ function numberAdder2(arr, num1, num2, num3) {
   return arr;
 }   
 
-const arr = 5;
-const result3 = numberAdder(arr, 3, 2, 4);
+const arr = [5];
+const result3 = numberAdder2(arr, 3, 2, 4);
 console.log(result3);
 
 // this one can be a problem if used elsewhere in the code after it has been modified by the function. So, if the fx changes the array, changes will affect the array outside the function as well which could then lead to bugs
