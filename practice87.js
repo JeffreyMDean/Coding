@@ -77,3 +77,5 @@ function countries(countriesArray, country) {
 const inputArray4 = ["New Zealand", "Iceland", "Greenland"];
 const result7 = countries(inputArray4, "Netherlands");
 console.log(result7);
+
+
