@@ -46,4 +46,3 @@ const inputPeople = [{ firstName: "Frank", lastName: "Smith"}, { firstName: "Luc
 const firstPerson = getFirstPersonInfo(inputPeople);
 console.log(firstPerson);
 
-
