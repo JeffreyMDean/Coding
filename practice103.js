@@ -71,3 +71,16 @@ function hashConverter3(array) {
 const inputArray3 = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
 const result5 = hashConverter2(inputArray3);
 console.log(result5);
+
+
+
+function hashConverter4(array) {
+  return array.reduce((result, item) => {
+    result[item.id] = item;
+    return result;
+  }, {});
+}
+
+const inputArray4 = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
+const result6 = hashConverter2(inputArray4);
+console.log(result6);
