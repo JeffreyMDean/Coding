@@ -37,7 +37,8 @@ console.log(result2);
 
 function hashConverter3(array) {
   return array.reduce((newHash, item) => {
-    return newHash[item.id] = item;
+    newHash[item.id] = item;
+    return newHash;
   }, {});
 }
 

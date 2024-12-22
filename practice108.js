@@ -70,10 +70,11 @@ console.log(result5);
 
 function hashConverter2(items) {
   return items.reduce((hash, item) => {
-    return hash[item.id] = item;
-  });
+    hash[item.id] = item;
+    return hash;
+  }, {});
 }
 
 const inputItems3 = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
-const result6 = hashConverter(inputItems3);
+const result6 = hashConverter2(inputItems3);
 console.log(result6);
