@@ -43,7 +43,7 @@ function hashConverter3(array) {
 }
 
 const inputArray3 = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}];
-const result3 = hashConverter(inputArray3);
+const result3 = hashConverter3(inputArray3);
 console.log(result3);
 
 // Convert an array of arrays into a hash.
