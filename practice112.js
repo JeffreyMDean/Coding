@@ -54,3 +54,23 @@ function letterCounter(string) {
 const inputString = "bookkeeper";
 const result4 = letterCounter(inputString);
 console.log(result4);
+
+function letterCounter2(string) {
+  let letterFrequencies = {};
+  let i = 0;
+
+  while (i < string.length) {
+    let letter = string[i];
+    if (letterFrequencies[letter] === undefined) {
+      letterFrequencies[letter] = 0;
+    }
+    letterFrequencies++;
+    i++;
+  }
+
+  return letterFrequencies;
+}
+
+const inputString2 = "bookkeeper";
+const result5 = letterCounter(inputString2);
+console.log(result5);
