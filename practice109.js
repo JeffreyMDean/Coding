@@ -73,7 +73,7 @@ console.log(result4);
 
 function hashConverter3(pairs) {
   return pairs.reduce((hash, pair) => {
-    hash[pair][0] = pair[1];
+    hash[pair[0]] = pair[1];
     return pair;
   }, {});
 }
@@ -83,5 +83,5 @@ const inputPairs3 = [
   [8, 9],
   [2, 16],
 ];
-const result5 = hashConverter2(inputPairs3);
+const result5 = hashConverter3(inputPairs3);
 console.log(result5);

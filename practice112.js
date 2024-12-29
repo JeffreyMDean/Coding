@@ -22,7 +22,8 @@ console.log(result2);
 
 function hashConverter2(items) {
   return items.reduce((hash, item) => {
-    return (hash[item.id] = item);
+    hash[item.id] = item;
+    return hash;
   }, {});
 }
 
@@ -30,7 +31,7 @@ const inputItems2 = [
   { id: 1, color: "blue", price: 32 },
   { id: 2, color: "red", price: 12 },
 ];
-const result3 = hashConverter(inputItems2);
+const result3 = hashConverter2(inputItems2);
 console.log(result3);
 
 // Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
