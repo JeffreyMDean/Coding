@@ -52,4 +52,13 @@ const inputString3 = "bookkeeper";
 const result3 = letterCounter3(inputString3);
 console.log(result3);
 
-// have to split as reduce is an array specific method
+// Convert a hash into an array of arrays.
+// For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+function converter(hash) {
+  return Object.entries(hash);
+}
+
+const inputHash = { chair: 100, book: 14 };
+const result4 = converter(inputHash);
+console.log(result4);
