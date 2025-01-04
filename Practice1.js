@@ -18,7 +18,7 @@ console.log(singleString);
 
 var strings = ["volleyball", "basketball", "badminton"];
 var singleString = strings.reduce(function (single, string) {
-  return single = single + string;
+  return (single = single + string);
 }, "");
 console.log(singleString);
 
