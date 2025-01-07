@@ -17,7 +17,7 @@ function converter2(people) {
 
   for (let id in people) {
     // if (people.hasOwnProperty(id)) {
-    if (Object.prototype.hashOwnProperty.call(people, id)) {
+    if (Object.prototype.hasOwnProperty.call(people, id)) {
       peopleArray.push({ id: parseInt(id), ...people[id] });
     }
   }
@@ -42,3 +42,22 @@ console.log(result2);
 // .call(people, id) ensures that hasOwnProperty is called on the people object, with the id (which is a key in the people object) passed as an argument
 // people is the object being checked
 // id is the current key from the people object you're chekcing to see if it exists as an own property of people
+
+function converter3(people) {
+  let newArray = [];
+
+  for (let id in people) {
+    if (Object.prototype.hasOwnProperty.call(people, id)) {
+      newArray.push({ id: parseInt(id), ...people[id] });
+    }
+  }
+
+  return newArray;
+}
+
+const inputPeople2 = {
+  321: { name: "Alice", age: 31 },
+  322: { name: "Maria", age: 27 },
+};
+const result3 = converter3(inputPeople2);
+console.log(result3);
