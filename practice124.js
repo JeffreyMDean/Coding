@@ -77,3 +77,20 @@ const inputPerson = {
 };
 const result5 = attributePrinter(inputPerson);
 console.log(result5);
+
+// Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+function info(names) {
+  return {
+    firstName: names[0]["firstName"],
+    lastName: names[0]["lastName"],
+  };
+}
+
+const inputNames = [
+  { firstName: "joe", lastName: "smith" },
+  { firstName: "jane", lastName: "smith" },
+  { firstName: "tom", lastName: "smith" },
+];
+const result6 = info(inputNames);
+console.log(result6);
