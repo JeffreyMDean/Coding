@@ -57,7 +57,10 @@ const result2 = capLetters(inputArray);
 console.log(result2);
 
 function capLetters2(array) {
-  let newArray = array.map(function (string) {
+  // let newArray = array.map(function (string) {
+  //   return string.toUpperCase();
+  // });
+  let newArray = array.map((string) => {
     return string.toUpperCase();
   });
 
@@ -65,7 +68,7 @@ function capLetters2(array) {
 }
 
 const inputArray2 = ["hello", "goodbye"];
-const result3 = capLetters(inputArray2);
+const result3 = capLetters2(inputArray2);
 console.log(result3);
 
 // Convert an array of arrays into a hash.
@@ -74,7 +77,7 @@ console.log(result3);
 function converter(pairs) {
   let pairsObject = {};
 
-  pairs.forEach(pair => {
+  pairs.forEach((pair) => {
     const [key, value] = pair;
     pairsObject[key] = value;
   });
@@ -82,6 +85,10 @@ function converter(pairs) {
   return pairsObject;
 }
 
-const inputPairs = [[1, 3], [8, 9], [2, 16]];
+const inputPairs = [
+  [1, 3],
+  [8, 9],
+  [2, 16],
+];
 const result4 = converter(inputPairs);
 console.log(result4);

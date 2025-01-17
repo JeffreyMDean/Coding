@@ -47,3 +47,17 @@ const inputPeople2 = {
 };
 const result3 = converter3(inputPeople2);
 console.log(result3);
+
+function converter4(people) {
+  return Object.entries(people).map(([key, value]) => ({
+    id: parseInt(key),
+    ...value,
+  }));
+}
+
+const inputPeople3 = {
+  321: { name: "Alice", age: 31 },
+  322: { name: "Maria", age: 27 },
+};
+const result4 = converter4(inputPeople);
+console.log(result4);
