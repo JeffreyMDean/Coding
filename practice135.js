@@ -33,3 +33,5 @@ const inputPeople2 = {
 };
 const result2 = converter2(inputPeople2);
 console.log(result2);
+
+// The spread operator automatically extracts and "spreads" all the properties of an object like { name: "Alice", age: 31 } into the new object. The curly braces around value aren't needed as the spread operator does the job of copying those properties into the new object
