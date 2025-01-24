@@ -85,3 +85,13 @@ function converter(string) {
 const inputString = "bookkeeper";
 const result6 = converter(inputString);
 console.log(result6);
+
+// Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
+// For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+
+function converter2(people) {
+
+}
+
+const inputPeople = {321: {name: "Alice", age: 31}, 322: {name: "Maria", age: 27}};
+const result7
