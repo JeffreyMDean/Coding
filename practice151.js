@@ -54,7 +54,7 @@ function combiner(prices, specs) {
   while (i < specs.length) {
     let spec = specs[i];
     let name = spec.name;
-    let color = spec.color;
+    let color = spec["color"];
     let weight = spec.weight;
     let price = prices[name];
     hash[name] = { price: price, color: color, weight: weight };
