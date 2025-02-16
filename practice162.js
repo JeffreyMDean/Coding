@@ -40,3 +40,5 @@ const inputItems = [
 ];
 const result2 = converter2(inputItems);
 console.log(result2);
+
+// .map() would not bes as effective here becuase .map() is designed for transorming an array into another array, not an object.
