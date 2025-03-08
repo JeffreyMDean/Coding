@@ -83,3 +83,24 @@ const inputItems3 = [
 ];
 const result5 = converter(inputItems3);
 console.log(result5);
+
+// Write a Song class with attributes and reader/writer methods for name, artist, and duration. Then write a method that prints the name, artist, and duration in a single sentence.
+
+class Song {
+  constructor(name, artist, duration) {
+    this.name = name;
+    this.artist = artist;
+    this.duration = duration;
+  }
+
+  printInfo() {
+    console.log(
+      `The song ${this.name} by ${this.artist} is ${this.duration} long.`
+    );
+    // this.name refers to the actual value stored in the name attribute of the instance of the class.
+  }
+}
+
+const song = new Song("Machinehead", "Bush", "4:17");
+console.log(song);
+song.printInfo();
