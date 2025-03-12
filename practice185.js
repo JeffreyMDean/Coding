@@ -20,6 +20,8 @@ class Song {
   }
 }
 
+// in ES6 methods in classes are defined directly without needing the function keyword. The method is tied to instances of the class, and you don't need 'function' becuases it's a method within the class definition (or body). In other words, since printInfo() is amethod defined inside the Song class, it expects to be called on an instance of that class (i.e. a song object in the current example)
+
 const song = new Song("White Room", "Cream", "4:58");
 console.log(song);
 song.printInfo();
