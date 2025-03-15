@@ -82,3 +82,16 @@ const point = new Point(3, 6, 8);
 console.log(point);
 console.log(point.areNumsPos());
 // areNumsPos has to be called on an instance of Point
+// When you define a method (like areNumsPos) inside  class (i.e. Point class), that method becomes part of the prototpye of the class meaning the mehod is associated with instances of the class, not the global scope.
+// So, you cannot call areNumsPos() directly unless you reference it through an instance of the class (like point.areNumsPos()), because the method is tied to the instance, not the global scope.
+
+// You are going to write a function which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+function whosPaying(names) {
+  let randomGen = Math.floor(Math.random() * inputNames.length);
+  return inputNames[randomGen] + " is going to buy lunch today!";
+}
+
+let inputNames = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+const result = whosPaying(inputNames);
+console.log(result);
