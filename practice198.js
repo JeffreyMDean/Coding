@@ -13,7 +13,7 @@ const result = converter(inputHash);
 console.log(result);
 
 // reduce is used when you want ot iterate over an array and "accumulate" or build up a result...in this case, i'm accumulating the keys and values into a flat array
-// the accumulator (array) is upadte on each iteration, and the final result is returned at the end of the reduce method
+// the accumulator (array) is updated on each iteration, and the final result is returned at the end of the reduce method
 
 function converter2(hash) {
   let flattenedArray = [];
