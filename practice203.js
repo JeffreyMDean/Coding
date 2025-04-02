@@ -62,7 +62,7 @@ const product2 = new Products("pdf", 25, {
   author: "Dr. Angela Yu",
   version: 2.0,
 });
-console.log("Producrt Details:");
+console.log("Product Details:");
 console.log(`Name: ${product2.name}`);
 console.log(`Price: ${product2.price}`);
 console.log(`Metadata: ${JSON.stringify(product2.metadata, null, 2)}`);
