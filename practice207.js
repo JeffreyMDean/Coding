@@ -67,7 +67,7 @@ function addUpToTen(numbers) {
       if (index1 !== index2) {
         let otherNum = numbers[index2];
         if (num + otherNum === 10 && result === false) {
-          result = [num, otherNum];
+          result = [num, otherNum]; // && result === false ensures once you have a result you stop updating it
         }
       }
       index2++;
@@ -80,3 +80,5 @@ function addUpToTen(numbers) {
 const inputNumbers3 = [2, 5, 3, 1, 0, 7, 11];
 const result3 = addUpToTen(inputNumbers3);
 console.log(result3);
+
+// if result not initally set to false you would be able to overwrite it, this way you ensure you only set result once when you find a valid pair of numbers
