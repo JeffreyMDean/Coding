@@ -47,3 +47,8 @@ console.log(`Product details:`);
 console.log(`Name: ${product.name}`);
 console.log(`Price: ${product.price}`);
 console.log(`Metadata: ${JSON.stringify(product.metadata, null, 2)}`);
+
+// JSON.stringify(value, replacer, space)
+// -product.metadata is the object to convert
+// null in this case means no filtering, include all properties
+// 2 is the indentation level (makers the output pretty and readable)
