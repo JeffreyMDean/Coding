@@ -6,14 +6,8 @@ class Playlist {
     this.songs = [];
   }
 
-  addItem(song) {
+  addSong(song) {
     this.songs.push(song);
-  }
-
-  displaySongs() {
-    this.songs.forEach((song) => {
-      console.log("-" + song);
-    });
   }
 
   removeSong(song) {
@@ -32,16 +26,21 @@ class Playlist {
       ];
     }
   }
+
+  displaySongs() {
+    console.log("Playlist:");
+    this.songs.forEach((song) => {
+      console.log("-" + song);
+    });
+  }
 }
 
 const playlist = new Playlist("My Playlist:");
-playlist.addItem("I think we're along now");
-playlist.addItem("Better together");
-playlist.addItem("1979");
-playlist.removeSong("1979");
+playlist.addSong("Machinehead");
+playlist.addSong("Glycerine");
+playlist.addSong("Comedown");
+playlist.addSong("Peaches");
+playlist.removeSong("Peaches");
 playlist.displaySongs();
 playlist.shuffleSongs();
 playlist.displaySongs();
-
-// let randomNumber = Math.floor(Math.random() * (i + 1));
-// this gives you a number between 0 and i
