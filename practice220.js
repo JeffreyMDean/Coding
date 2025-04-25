@@ -43,3 +43,16 @@ playlist.removeSong("Mr. Jones");
 playlist.displaySongs();
 playlist.shuffleSongs();
 playlist.displaySongs();
+
+// Start with an array of strings and combine them all into a single string.
+// For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+
+function stringCombiner(strings) {
+  return strings.reduce((single, string) => {
+    return single + string;
+  }, "");
+}
+
+const inputStrings = ["volleyball", "basketball", "badminton"];
+const result = stringCombiner(inputStrings);
+console.log(result);
