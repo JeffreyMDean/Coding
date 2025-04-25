@@ -14,6 +14,6 @@ const contact = new Contact("Hank", 40, {
   address: "2131 Pine Street",
 });
 console.log("Personal info:");
-console.log(`name: ${contact.name}`);
+console.log(`name: ${contact.name}`); // this works because now contact holds all the properties of that object
 console.log(`age: ${contact.age}`);
 console.log(`contactInfo: ${JSON.stringify(contact.contactInfo, null, 2)}`);
