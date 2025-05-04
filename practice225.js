@@ -34,7 +34,7 @@ class Playlist {
   }
 
   shuffleSongs() {
-    for (let i = 0; i > this.songs.length - 1; i--) {
+    for (let i = this.songs.length - 1; i > 0; i--) {
       const random = Math.floor(Math.random() * (i + 1));
       [this.songs[i], this.songs[random]] = [this.songs[random], this.songs[i]];
     }
