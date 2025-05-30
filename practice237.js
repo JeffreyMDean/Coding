@@ -43,3 +43,37 @@ const inputBooks2 = [
 ];
 const result2 = converter2(inputBooks2);
 console.log(result2);
+
+// Given a hash, create a new hash that has the keys and values switched.
+// For example, {"a": 1, "b": 2, "c": 3} becomes {1: "a", 2: "b", 3: "c"}.
+
+function converter3(hash) {
+  let newHash = {};
+
+  Object.entries(hash).forEach(([key, value]) => {
+    newHash[value] = key;
+  });
+
+  return newHash;
+}
+
+const inputHash = { a: 1, b: 2, c: 3 };
+const result3 = converter3(inputHash);
+console.log(result3);
+
+// Write a Rectangle class with attributes for width and height.
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  area() {
+    return this.width * this.height;
+  }
+}
+
+const rectangle = new Rectangle(20, 90);
+console.log(rectangle);
+console.log(rectangle.area());
