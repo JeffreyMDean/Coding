@@ -37,11 +37,11 @@ cart.displayItems();
 class Product {
   constructor(name, price, metadata) {
     this.name = name;
+    //this["name"]
     this.price = price;
     this.metadata = metadata;
   }
 }
-
 const product = new Product("Echo", 200, {
   cycle: "2-stroke",
   speedfeed: "yes",
@@ -50,3 +50,7 @@ console.log("Product Info:");
 console.log(`Name: ${product.name}`);
 console.log(`Price: ${product.price}`);
 console.log(`Metadata: ${JSON.stringify(product.metadata, null, 2)}`);
+
+//new Product(...) creates a new obj
+//constrcutor runs, assigning this.name = "Echo" and so on
+//product.name is the exact same as product["name"]...JS is just accessing the object's property
