@@ -20,3 +20,21 @@ const inputItems = [
 ];
 const result = shortestName(inputItems);
 console.log(result);
+
+function shortestName2(items) {
+  return items.reduce((short, item) => {
+    if (item.name.length < short.name.length) {
+      return item;
+    } else {
+      return short;
+    }
+  }, items[0]);
+}
+
+const inputItems2 = [
+  { name: "chair", price: 100 },
+  { name: "pencil", price: 1 },
+  { name: "book", price: 4 },
+];
+const result2 = shortestName2(inputItems2);
+console.log(result2);
