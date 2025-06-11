@@ -52,7 +52,7 @@ console.log(result2);
 function discountCalculator(orderValue, membershipLevel) {
   if (orderValue < 50) {
     return 0;
-  } else if (orderValue > 50 && orderValue < 100) {
+  } else if (orderValue >= 50 && orderValue <= 100) {
     if (membershipLevel === "regular") {
       return orderValue * 0.05;
     } else if (membershipLevel === "premium") {
