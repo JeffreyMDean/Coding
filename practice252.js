@@ -38,3 +38,45 @@ const inputItems2 = [
 ];
 const result2 = shortestName2(inputItems2);
 console.log(result2);
+
+// Convert an array of arrays into a hash.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes {1: 3, 8: 9, 2: 16}.
+
+function converter(pairs) {
+  let hash = {};
+
+  for (let i = 0; i < pairs.length; i++) {
+    const [key, value] = pairs[i];
+    hash[key] = value;
+  }
+
+  return hash;
+}
+
+const inputPairs = [
+  [1, 3],
+  [8, 9],
+  [2, 16],
+];
+const result3 = converter(inputPairs);
+console.log(result3);
+
+function converter2(pairs) {
+  let hash = {};
+
+  for (let i = 0; i < pairs.length; i++) {
+    let key = pairs[i][0];
+    let value = pairs[i][1];
+    hash[key] = value;
+  }
+
+  return hash;
+}
+
+const inputPairs2 = [
+  [1, 3],
+  [8, 9],
+  [2, 16],
+];
+const result4 = converter2(inputPairs2);
+console.log(result4);
